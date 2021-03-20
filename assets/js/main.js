@@ -112,6 +112,9 @@
                   number.value = ""
                   checkit.value = ""
 
+                },
+                error: function(err) {
+                  console.log(err)
                 }
             })   
           } 
