@@ -21,12 +21,20 @@ $mail = new PHPMailer;
 $mail->isSMTP(); // send as HTML
 $mail->Host = "smtp.gmail.com"; // SMTP servers
 $mail->SMTPAuth = true; // turn on SMTP authentication
-$mail->Username = "ajnasim72@gmail.com"; // Your mail
-$mail->Password = 'Ajnasim016'; // Your password mail
+
+
+$mail->Username = "your email"; // Your mail
+$mail->Password = 'your email password'; // Your password mail
+
+
 $mail->Port = 587; //specify SMTP Port
 $mail->SMTPSecure = 'tls';
 $mail->setFrom($time,$work,$fname,$lname,$email,$number,$checkit);
-$mail->addAddress('ajnasim72@gmail.com');
+
+
+$mail->addAddress('your email');
+
+
 $mail->addReplyTo($time,$work,$fname,$lname,$email,$number,$checkit);
 $mail->isHTML(true);
 $mail->Subject='Form :' .$sub;
