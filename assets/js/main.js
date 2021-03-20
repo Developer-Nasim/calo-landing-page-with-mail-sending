@@ -114,7 +114,11 @@
 
                 },
                 error: function(err) {
-                  console.log(err)
+                  msg.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Somthing went wrong...</strong></div>`  
+                  console.log(err.message)
+                  setTimeout(() => {
+                    msg.innerHTML = " "
+                  }, 5000);
                 }
             })   
           } 
