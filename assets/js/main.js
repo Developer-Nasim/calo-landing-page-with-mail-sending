@@ -113,9 +113,8 @@
                   checkit.value = ""
 
                 },
-                error: function(err) {
-                  msg.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Somthing went wrong...</strong></div>`  
-                  console.log(err.message)
+                error: function() {
+                  msg.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Somthing wents wrong...</strong></div>`  
                   setTimeout(() => {
                     msg.innerHTML = " "
                   }, 5000);
